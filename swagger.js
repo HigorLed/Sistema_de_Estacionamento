@@ -23,11 +23,11 @@ const options = {
     },
 
     apis: [
-        "./src/routes/cliente.route.js",
-        "./src/routes/usuario.route.js",
-        "./src/routes/vaga.route.js",
-        "./src/routes/veiculo.route.js",
-        "./src/routes/movimentacao.route.js"
+        "./src/routes/Cliente.routes.js",
+        "./src/routes/Usuario.routes.js",
+        "./src/routes/Vaga.routes.js",
+        "./src/routes/Veiculo.routes.js",
+        "./src/routes/Movimentacao.routes.js"
     ]
 };
 
