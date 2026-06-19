@@ -20,6 +20,7 @@ model Usuario {
   senha String
   perfil String @default("Funcionário")
   criadoEm DateTime @default(now())
+  atualizadoEm DateTime? @updatedAt
 
   movimentacoes Movimentacao[]
 }
@@ -67,6 +68,7 @@ model Movimentacao {
   valorTotal Decimal @db.Decimal(10, 2)
   status String @default("ABERTO")
   criadoEm DateTime @default(now())
+  atualizadoEm DateTime?
 
   veiculoId Int
   veiculo Veiculos @relation(fields: [veiculoId], references: [id])
